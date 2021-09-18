@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row justify-content-center">
+   <form [formGroup]="RegisterForm" (ngSubmit)="onSubmit()">
+
+    <div class="col-sm-6">
+     <div class="card">
+       <div class="card-body">
+          <h1>Register Form</h1>
+
+           <div class="mb-3">
+             <label for="exampleInputEmail1" class="form-label">Name</label>
+             <input type="text" formControlName="name" class="form-control">
+           </div>
+
+           <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Account Type</label>
+            <input type="text" formControlName="accountType" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Phone No</label>
+            <input type="text" formControlName="phoneNo" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">User Name</label>
+            <input type="text" formControlName="userName" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" formControlName="email" class="form-control">
+          </div>
+
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Password</label>
+             <input type="password" formControlName="Password" class="form-control">
+           </div>
+
+           <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Shop Name</label>
+            <input type="text" formControlName="shopName" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Business Type</label>
+            <input type="text" formControlName="businessTye" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Role</label>
+            <input type="text" formControlName="role" class="form-control">
+          </div>
+           <button type="submit" class="btn btn-primary" [disabled]="!RegisterForm.valid">Register</button>
+       </div>
+     </div>
+    </div>
+   </form>
+
+  </div>
+</div>
